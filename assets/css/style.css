@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center; 
+    margin-top: 100px;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loadingbar{
+    width: 1000px;
+    height: 45px;
+    border: solid rgb(131, 131, 131) 1px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.loading-bar-running{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #bb69cc, #246bac);
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+}
+
+.loading-bar-running p{
+    font-size: 28px;
+    font-weight: 700;
+    color: azure;
+}
